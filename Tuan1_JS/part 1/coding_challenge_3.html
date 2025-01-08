@@ -3,11 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bai 3</title>
 </head>
 <body>
     <script>
-        let 
+        function calculateAverage(scores) {
+            let sum = 0;
+                for (let index = 0; index < scores.length; index++) {
+                    sum+= scores[index];
+                }
+                return sum / scores.length;
+            }
+        
+        // Test Data 1
+        console.log("\nTest Data 1:");
+        let dolphins1 = [96, 108, 89];
+        let avgdolphins1 = calculateAverage(dolphins1);
+        console.log(`Dolphins average score: ${avgdolphins1.toFixed(2)}`);
+
+        let koalas1 = [88, 91, 110];
+        let avgkoalas1 = calculateAverage(koalas1);
+        console.log(`Koalas average score: ${avgkoalas1.toFixed(2)}`);
+
+        if (avgdolphins1 > avgkoalas1) {
+                    console.log("Dolphins win the trophy!");
+                } else if (avgkoalas1 > avgdolphins1) {
+                    console.log("Koalas win the trophy!");
+                } else {
+                    console.log("It's a draw!");
+                }
+
+        // Test Data Bonus 1
+        console.log("\nTest Data Bonus 1:");
+        let dolphins2 = [97, 112, 101];
+        let avgdolphins2 = calculateAverage(dolphins2);
+        console.log(`Dolphins average score: ${avgdolphins2.toFixed(2)}`);
+
+        let koalas2 = [109, 95, 123];
+        let avgkoalas2 = calculateAverage(koalas2);
+        console.log(`Koalas average score: ${avgkoalas2.toFixed(2)}`);
+        if (avgdolphins2 > avgkoalas2) {
+                    console.log("Dolphins win the trophy!");
+                } else if (avgkoalas2 > avgdolphins2) {
+                    console.log("Koalas win the trophy!");
+                } else {
+                    console.log("It's a draw!");
+                }
+
+        // Test Data Bonus 2
+        console.log("\nTest Data Bonus 2:");
+        let dolphins3 = [97, 112, 101];
+        let avgdolphins3 = calculateAverage(dolphins3);
+        console.log(`Dolphins average score: ${avgdolphins3.toFixed(2)}`);
+
+        let koalas3 = [109, 95, 106];
+        let avgkoalas3 = calculateAverage(koalas3);
+        console.log(`Koalas average score: ${avgkoalas3.toFixed(2)}`);
+        if (avgdolphins3 > avgkoalas3) {
+                    console.log("Dolphins win the trophy!");
+                } else if (avgkoalas3 > avgdolphins3) {
+                    console.log("Koalas win the trophy!");
+                } else {
+                    console.log("It's a draw!");
+                }
+
     </script>
 </body>
 </html>

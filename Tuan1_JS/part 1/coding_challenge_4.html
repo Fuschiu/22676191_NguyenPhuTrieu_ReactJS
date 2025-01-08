@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 4</title>
+</head>
+<body>
+    <script>
+        function calculateBill(billValue) {
+            const tip = (billValue >= 50 && billValue <= 300) ? billValue * 0.15 : billValue * 0.20;
+            
+            const total = billValue + tip;
+            
+            console.log(`The bill was ${billValue}, the tip was ${tip.toFixed(2)}, and the total value ${total.toFixed(2)}`);
+        }
+
+        // Test Data
+        console.log("Testing with different bill values:");
+        const testValues = [275, 40, 430];
+
+        testValues.forEach(bill => {
+            calculateBill(bill);
+        });
+    </script>
+</body>
+</html>
